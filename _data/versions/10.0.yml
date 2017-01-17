@@ -1,0 +1,6 @@
+name: 10.0
+status:
+  - name: unit test
+    badge: https://jenkins.owncloud.org/buildStatus/icon?job=owncloud-core/core/master
+    url: https://jenkins.owncloud.org/job/owncloud-core/job/core/job/master/
+

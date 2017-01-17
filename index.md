@@ -1,17 +1,8 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for version in site.versions %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ version.url }}">{{ version.title }}</a></h1>
-
-      <div class="entry">
-        {{ version.excerpt }}
-      </div>
-
-    </article>
-  {% endfor %}
-</div>
+<ul>
+{% for version_hash in site.data.verions %}
+{% assign version = version_hash[1] %}
+  <li>
+    <h1>{{ version.name }}</h1>
+  </li>
+{% endfor %}
+</ul>
